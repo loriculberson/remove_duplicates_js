@@ -8,11 +8,18 @@ function removeDups(nums) {
       nums.splice(i, 1);
       i--;
     }
-    console.log('Current: ', currentValue);
-    console.log('Next:', nextValue);
+    //console.log('Current: ', currentValue);
+    //console.log('Next:', nextValue);
     i++;
   }
   return nums;
 }
 
-module.exports = removeDups;
+
+function uniqValuesCounter(noDupes) {
+  return noDupes.length;
+}
+
+
+
+module.exports = { removeDups, uniqValuesCounter };
